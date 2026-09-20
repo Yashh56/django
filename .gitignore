@@ -3,6 +3,7 @@ env/
 venv/
 ENV/
 .env
+.venv
 
 # Django specific
 db.sqlite3
