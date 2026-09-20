@@ -33,6 +33,8 @@ ALLOWED_HOSTS = [
     host
     for host in [
         os.environ.get('RENDER_EXTERNAL_HOSTNAME'),
+        os.environ.get('VERCEL_URL', ''),
+        os.environ.get('VERCEL_PROJECT_PRODUCTION_URL', ''),
         'localhost',
         '127.0.0.1',
     ]
